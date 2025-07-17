@@ -183,6 +183,10 @@ const Dashboard = ({ userInfo, onLogout, onModuleSelect }) => {
             min-height: 100vh;
           }
           
+          .dashboard-header {
+            background: linear-gradient(90deg, #293259 0%, #537092 100%);
+            box-shadow: 0 2px 20px rgba(41, 50, 89, 0.15);
+          }
           
           .welcome-section {
             background: white;
@@ -420,7 +424,7 @@ const Dashboard = ({ userInfo, onLogout, onModuleSelect }) => {
 
       <div className="dashboard-bg">
         {/* Header del Dashboard */}
-      
+        <header className="dashboard-header">
           <div className="container-fluid py-3">
             <div className="row align-items-center">
               <div className="col">
@@ -442,7 +446,7 @@ const Dashboard = ({ userInfo, onLogout, onModuleSelect }) => {
               </div>
             </div>
           </div>
-        
+        </header>
 
         {/* Contenido Principal */}
         <main className="container-fluid py-4">
@@ -554,6 +558,11 @@ const Dashboard = ({ userInfo, onLogout, onModuleSelect }) => {
           </div>
 
           {/* Footer */}
+          <div className="text-center mt-5">
+            <p className="text-muted small mb-0">
+              © 2025 RutaDTAI - Sistema de Gestión de Proyectos | Universidad Tecnológica de Querétaro
+            </p>
+          </div>
         </main>
       </div>
     </>
